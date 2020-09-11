@@ -9,65 +9,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="./og.jpg">
     <meta property="og:title" content=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-    <link href="assets/css/main.css?v-1599223383594" rel="stylesheet"><link rel="shortcut icon" href="favicon.ico">
+    <link href="assets/css/main.css?v-1599851087414" rel="stylesheet"><link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
-        <div class="main-page">
-          <header class="header">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="header__between">
-                    <div class="header__half"><img class="header__logo" src="assets/img/logo.svg">
-                      <div class="header__menu"><a class="header__menu__link header__menu__link_active" href="#">Главная</a><a class="header__menu__link" href="#">Цены</a><a class="header__menu__link" href="#">Блог</a><a class="header__menu__link" href="#">Контакты</a></div>
+    <div class="stick">
+            <div class="stick__top">
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header__between">
+          <div class="header__half"><a class="header__logo" href="#"><img class="header__logo__image" src="assets/img/logo.svg"></a>
+            <div class="header__menu"><a class="header__menu__link header__menu__link_active" href="#">Главная</a><a class="header__menu__link" href="#">Цены</a><a class="header__menu__link" href="#">Блог</a><a class="header__menu__link" href="#">Контакты</a></div>
+          </div>
+          <div class="header__half">
+            <div class="header__language-shell">
+              <button class="header__language-close" onclick="closeLanguageDropdown()"></button>
+              <button class="header__language-open" onclick="openLanguageDropdown()"><span class="header__language-open__text">RU</span><img class="header__language-open__icon" src="assets/img/ru.svg"></button>
+              <div class="header__language-shell__dropdown"> <a class="header__language header__language_current" href="./"><img class="header__language__icon" src="assets/img/ru.svg"><span class="header__language__text">Russian</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/en.svg"><span class="header__language__text">English</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/esp.svg"><span class="header__language__text">Español</span></a></div>
+            </div>
+            <button class="header__burger" onclick="openWindowMenu()"><img class="header__burger__image" src="assets/img/burger.svg"></button><a class="header__login" href="#"><img class="header__login__icon" src="assets/img/login.svg">Войти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu-window">
+  <div class="menu-window__back" onclick="closeWindowMenu()"></div>
+  <div class="menu-window__shell">
+    <button class="menu-window__shell__close" onclick="closeWindowMenu()"><img src="assets/img/close.svg"></button>
+    <div class="menu-window__shell__center"><img class="menu-window__shell__logo" src="assets/img/logo-word.svg">
+      <div class="menu-window__shell__links"><a class="menu-window__shell__links__link menu-window__shell__links__link_active" href="#">Главная</a><a class="menu-window__shell__links__link" href="#">Цены</a><a class="menu-window__shell__links__link" href="#">Блог</a><a class="menu-window__shell__links__link" href="#">Контакты</a></div><a class="menu-window__shell__login" href="#"><img class="menu-window__shell__login__icon" src="assets/img/login.svg"><span class="menu-window__shell__login__text">Войти</span></a>
+    </div>
+  </div>
+</div>
+              <section class="initial-screen">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4"><img class="initial-screen__illustration" src="assets/img/initial-screen__illustration.svg"></div>
+                    <div class="col-lg-8">
+                      <h1 class="initial-screen__headline">Платформа для мониторинга окружающей среды</h1>
+                      <p class="initial-screen__description">Профессиональное программное обеспечение в области <br class="br_lg br_md"> экологического контроля и защиты окружающей среды</p><a class="initial-screen__more" href="#for-whom-it-will-be-useful">Подробнее</a>
                     </div>
-                    <div class="header__half"><a class="header__language" href="#"><span class="header__language__text">RU</span><img class="header__language__icon" src="assets/img/ru.svg"></a>
-                      <button class="header__burger" onclick="openWindowMenu()"><span class="header__burger__line"></span></button><a class="header__login" href="#"><img class="header__login__icon" src="assets/img/login.svg">Войти</a>
+                  </div>
+                </div>
+              </section>
+              <section class="advantages" id="advantages">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="advantages__advantage">
+                        <p class="advantages__advantage__count">01</p>
+                        <p class="advantages__advantage__headline">Просто принимайте решения</p>
+                        <p class="advantages__advantage__description">Получайте уведомления о превышениях<br class="br_lg"> пределов допустимых<br class="br_md"> концентраций и<br class="br_lg"> отчёты, всё остальное для Вас сделают<br class="br_lg"> аналитики<br class="br_md"> и консультанты</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="advantages__advantage">
+                        <p class="advantages__advantage__count">02</p>
+                        <p class="advantages__advantage__headline">Анализируйте </p>
+                        <p class="advantages__advantage__description">Быстро, много, в режиме реального<br class="br_lg"> времени и делитесь с командой<br class="br_md"><br class="br_lg"> ссылками на результаты</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="advantages__advantage">
+                        <p class="advantages__advantage__count">03</p>
+                        <p class="advantages__advantage__headline">Развивайте консалтинговый бизнес</p>
+                        <p class="advantages__advantage__description">Раньше у Вас был просто сайт, а теперь у Вас и<br class="br_lg"> ваших клиентов есть<br class="br_md"> собственная платформа<br class="br_lg"> экологической телематики под вашим<br class="br_md"> брендом</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </header>
-          <section class="initial-screen">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4"><img class="initial-screen__illustration" src="assets/img/initial-screen__illustration.svg"></div>
-                <div class="col-lg-8">
-                  <h1 class="initial-screen__headline">Платформа для мониторинга окружающей среды</h1>
-                  <p class="initial-screen__description">Профессиональное программное обеспечение в области <br class="br_lg br_md"> экологического контроля и защиты окружающей среды</p><a class="initial-screen__more" href="#advantages">Подробнее</a>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="advantages" id="advantages">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4">
-                  <div class="advantages__advantage">
-                    <p class="advantages__advantage__count">01</p>
-                    <p class="advantages__advantage__headline">Просто принимайте решения</p>
-                    <p class="advantages__advantage__description">Получайте уведомления о превышениях<br class="br_lg"> пределов допустимых<br class="br_md"> концентраций и<br class="br_lg"> отчёты, всё остальное для Вас сделают<br class="br_lg"> аналитики<br class="br_md"> и консультанты</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="advantages__advantage">
-                    <p class="advantages__advantage__count">02</p>
-                    <p class="advantages__advantage__headline">Анализируйте </p>
-                    <p class="advantages__advantage__description">Быстро, много, в режиме реального<br class="br_lg"> времени и делитесь с командой<br class="br_md"><br class="br_lg"> ссылками на результаты</p>
-                  </div>
-                </div>
-                <div class="col-lg-4">
-                  <div class="advantages__advantage">
-                    <p class="advantages__advantage__count">03</p>
-                    <p class="advantages__advantage__headline">Развивайте консалтинговый бизнес</p>
-                    <p class="advantages__advantage__description">Раньше у Вас был просто сайт, а теперь у Вас и<br class="br_lg"> ваших клиентов есть<br class="br_md"> собственная платформа<br class="br_lg"> экологической телематики под вашим<br class="br_md"> брендом</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="for-whom-it-will-be-useful"><svg  class="for-whom-it-will-be-useful__billet for-whom-it-will-be-useful__billet_top for-whom-it-will-be-useful__billet_desktop" preserveAspectRatio="none" viewBox="0 0 1598 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </section>
+              <section class="for-whom-it-will-be-useful" id="for-whom-it-will-be-useful"><svg  class="for-whom-it-will-be-useful__billet for-whom-it-will-be-useful__billet_top for-whom-it-will-be-useful__billet_desktop" preserveAspectRatio="none" viewBox="0 0 1598 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1597.37 31H0.604492C779.613 -37.0025 1557.17 27.5705 1597.37 31Z" fill="#EFF1FA"/>
 </svg>
 <svg  class="for-whom-it-will-be-useful__billet for-whom-it-will-be-useful__billet_bottom for-whom-it-will-be-useful__billet_desktop" preserveAspectRatio="none" viewBox="0 0 1598 31" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -85,115 +100,115 @@
 <svg class="for-whom-it-will-be-useful__billet  for-whom-it-will-be-useful__billet_bottom for-whom-it-will-be-useful__billet_mobile" preserveAspectRatio="none"  viewBox="0 0 320 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M320 25.6149C320 25.6149 158 -32.0186 0 25.6149V26H320V25.6149Z" fill="#EFF1FA"/>
 </svg>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h2 class="for-whom-it-will-be-useful__headline">Для кого будет полезно?</h2>
-                  <div class="for-whom-it-will-be-useful__directions">
-                    <div class="for-whom-it-will-be-useful__direction">
-                      <div class="for-whom-it-will-be-useful__direction__top">
-                        <div class="for-whom-it-will-be-useful__direction__top__left">
-                          <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-1" src="assets/img/direction-1.svg"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="for-whom-it-will-be-useful__headline">Для кого будет полезно?</h2>
+                      <div class="for-whom-it-will-be-useful__directions">
+                        <div class="for-whom-it-will-be-useful__direction">
+                          <div class="for-whom-it-will-be-useful__direction__top">
+                            <div class="for-whom-it-will-be-useful__direction__top__left">
+                              <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-1" src="assets/img/direction-1.png"></div>
+                            </div>
+                            <div class="for-whom-it-will-be-useful__direction__top__right">
+                              <p class="for-whom-it-will-be-useful__direction__headline">РУКОВОДИТЕЛЯМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="prices">Узнать стоимость</a>
+                            </div>
+                          </div>
+                          <p class="for-whom-it-will-be-useful__direction__description">Вы относите себя к лицам принимающим решения, руководителям, менеджерам, инспекторам, супервайзерам, используете данные, готовые к оценке, а ваш инструментарий – это готовые отчёты, дашборды, графики и диаграммы</p>
                         </div>
-                        <div class="for-whom-it-will-be-useful__direction__top__right">
-                          <p class="for-whom-it-will-be-useful__direction__headline">РУКОВОДИТЕЛЯМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="#">Узнать стоимость</a>
+                        <div class="for-whom-it-will-be-useful__direction">
+                          <div class="for-whom-it-will-be-useful__direction__top">
+                            <div class="for-whom-it-will-be-useful__direction__top__left">
+                              <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-2" src="assets/img/direction-2.png"></div>
+                            </div>
+                            <div class="for-whom-it-will-be-useful__direction__top__right">
+                              <p class="for-whom-it-will-be-useful__direction__headline">АНАЛИТИКАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="prices">Узнать стоимость</a>
+                            </div>
+                          </div>
+                          <p class="for-whom-it-will-be-useful__direction__description">Вы являетесь профильным специалистом, аналитиком, собираетесь использовать платформу для собственных нужд вашей компании, работаете с чистыми, не имеющими пробелов данными, используете телематическое оборудование, готовите отчёты для лиц принимающих решения</p>
                         </div>
-                      </div>
-                      <p class="for-whom-it-will-be-useful__direction__description">Вы относите себя к лицам принимающим решения, руководителям, менеджерам, инспекторам, супервайзерам, используете данные, готовые к оценке, а ваш инструментарий – это готовые отчёты, дашборды, графики и диаграммы</p>
-                    </div>
-                    <div class="for-whom-it-will-be-useful__direction">
-                      <div class="for-whom-it-will-be-useful__direction__top">
-                        <div class="for-whom-it-will-be-useful__direction__top__left">
-                          <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-2" src="assets/img/direction-2.svg"></div>
+                        <div class="for-whom-it-will-be-useful__direction">
+                          <div class="for-whom-it-will-be-useful__direction__top">
+                            <div class="for-whom-it-will-be-useful__direction__top__left">
+                              <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-3" src="assets/img/direction-3.png"></div>
+                            </div>
+                            <div class="for-whom-it-will-be-useful__direction__top__right">
+                              <p class="for-whom-it-will-be-useful__direction__headline">КОНСУЛЬТАНТАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="prices">Узнать стоимость</a>
+                            </div>
+                          </div>
+                          <p class="for-whom-it-will-be-useful__direction__description">Вы профессиональный консультант или работаете в консалтинговой компании с большим количесвтом клиентов, Вы учёный, преподаватель, датасаинтист, специалист, работающий с большими и сырыми данными, содержащими пробелы, и привыкли иметь дело с API и другими решениями, облегчающими задачи бизнеса, образования и науки</p>
                         </div>
-                        <div class="for-whom-it-will-be-useful__direction__top__right">
-                          <p class="for-whom-it-will-be-useful__direction__headline">АНАЛИТИКАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="#">Узнать стоимость</a>
+                        <div class="for-whom-it-will-be-useful__direction">
+                          <div class="for-whom-it-will-be-useful__direction__top">
+                            <div class="for-whom-it-will-be-useful__direction__top__left">
+                              <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-4" src="assets/img/direction-4.png"></div>
+                            </div>
+                            <div class="for-whom-it-will-be-useful__direction__top__right">
+                              <p class="for-whom-it-will-be-useful__direction__headline">СПЕЦПРОЕКТАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="prices">Узнать стоимость</a>
+                            </div>
+                          </div>
+                          <p class="for-whom-it-will-be-useful__direction__description">Вы пользователь с особыми требованиями, Вы представляете организацию или учреждение, которым необходимы локальные или закрытые системы и оперирование в крупных диспетчерских центрах, государственных структурах, крупных промышленных предприятиях и консалтинговых корпорациях</p>
                         </div>
-                      </div>
-                      <p class="for-whom-it-will-be-useful__direction__description">Вы являетесь профильным специалистом, аналитиком, собираетесь использовать платформу для собственных нужд вашей компании, работаете с чистыми, не имеющими пробелов данными, используете телематическое оборудование, готовите отчёты для лиц принимаюзих решения</p>
-                    </div>
-                    <div class="for-whom-it-will-be-useful__direction">
-                      <div class="for-whom-it-will-be-useful__direction__top">
-                        <div class="for-whom-it-will-be-useful__direction__top__left">
-                          <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-3" src="assets/img/direction-3.svg"></div>
-                        </div>
-                        <div class="for-whom-it-will-be-useful__direction__top__right">
-                          <p class="for-whom-it-will-be-useful__direction__headline">КОНСУЛЬТАНТАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="#">Узнать стоимость</a>
-                        </div>
-                      </div>
-                      <p class="for-whom-it-will-be-useful__direction__description">Вы профессиональный консультант или работаете в консалтинговой компании с большим количесвтом клиентов, Вы учёный, преподаватель, датасаинтист, специалист, работающий с большими и сырыми данными, содержащими пробелы, и привыкли иметь дело с API и другими решениями, облегчающими задачи бизнеса, образования и науки</p>
-                    </div>
-                    <div class="for-whom-it-will-be-useful__direction">
-                      <div class="for-whom-it-will-be-useful__direction__top">
-                        <div class="for-whom-it-will-be-useful__direction__top__left">
-                          <div class="for-whom-it-will-be-useful__direction__illustration-shell"><img class="for-whom-it-will-be-useful__direction__illustration for-whom-it-will-be-useful__direction__illustration-4" src="assets/img/direction-4.svg"></div>
-                        </div>
-                        <div class="for-whom-it-will-be-useful__direction__top__right">
-                          <p class="for-whom-it-will-be-useful__direction__headline">СПЕЦПРОЕКТАМ</p><a class="for-whom-it-will-be-useful__direction__to-know" href="#">Узнать стоимость</a>
-                        </div>
-                      </div>
-                      <p class="for-whom-it-will-be-useful__direction__description">Вы пользователь с особыми требованиями, Вы представляете организацию или учреждение, которым необходимы локальные или закрытые системы и оперирование в крупных диспетчерских центрах, государственных структурах, крупных промышленных предприятиях и консалтинговых корпорациях</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="what-can-the-platform-do">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12 what-can-the-platform-do__mobile-order-1">
-                  <h2 class="what-can-the-platform-do__headline what-can-the-platform-do__headline_mobile">Что может платформа?</h2>
-                </div>
-                <div class="col-lg-6 what-can-the-platform-do__mobile-order-3">
-                  <h2 class="what-can-the-platform-do__headline what-can-the-platform-do__headline_desktop">Что может платформа?</h2>
-                  <div class="what-can-the-platform-do__choses">
-                    <div class="what-can-the-platform-do__chose what-can-the-platform-do__chose_active">
-                      <div class="what-can-the-platform-do__chose__cell"></div>
-                      <div class="what-can-the-platform-do__chose__right">
-                        <p class="what-can-the-platform-do__chose__headline">Загружать данные</p>
-                        <p class="what-can-the-platform-do__chose__description">с подключенных устройств, ваших<br class="br_lg"> файлов, доступных массивов и API </p>
-                      </div>
-                    </div>
-                    <div class="what-can-the-platform-do__chose">
-                      <div class="what-can-the-platform-do__chose__cell"></div>
-                      <div class="what-can-the-platform-do__chose__right">
-                        <p class="what-can-the-platform-do__chose__headline">Обрабатывать наборы данных</p>
-                        <p class="what-can-the-platform-do__chose__description">доступными инструментами, устанавливать<br class="br_lg"> алерты и нормативные пределы</p>
-                      </div>
-                    </div>
-                    <div class="what-can-the-platform-do__chose">
-                      <div class="what-can-the-platform-do__chose__cell"></div>
-                      <div class="what-can-the-platform-do__chose__right">
-                        <p class="what-can-the-platform-do__chose__headline">Формировать отчёты</p>
-                        <p class="what-can-the-platform-do__chose__description">для лиц принимающих решение<br class="br_lg"> и ваших конечных клиентов</p>
                       </div>
                     </div>
                   </div>
-                  <div class="what-can-the-platform-do__mobile-choses">
-                    <div class="what-can-the-platform-do__mobile-chose what-can-the-platform-do__mobile-chose_active">
-                      <p class="what-can-the-platform-do__mobile-chose__headline">Загружать данные</p>
-                      <p class="what-can-the-platform-do__mobile-chose__description">с подключенных устройств, ваших <br class="br_md">файлов, доступных массивов и API </p>
+                </div>
+              </section>
+              <section class="what-can-the-platform-do" id="what-can-the-platform-do">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12 what-can-the-platform-do__mobile-order-1">
+                      <h2 class="what-can-the-platform-do__headline what-can-the-platform-do__headline_mobile">Что может платформа?</h2>
                     </div>
-                    <div class="what-can-the-platform-do__mobile-chose">
-                      <p class="what-can-the-platform-do__mobile-chose__headline">Обрабатывать наборы данных</p>
-                      <p class="what-can-the-platform-do__mobile-chose__description">доступными инструментами, устанавливать алерты и нормативные пределы</p>
+                    <div class="col-lg-6 what-can-the-platform-do__mobile-order-3">
+                      <h2 class="what-can-the-platform-do__headline what-can-the-platform-do__headline_desktop">Что может платформа?</h2>
+                      <div class="what-can-the-platform-do__choses">
+                        <div class="what-can-the-platform-do__chose what-can-the-platform-do__chose_active">
+                          <div class="what-can-the-platform-do__chose__cell"></div>
+                          <div class="what-can-the-platform-do__chose__right">
+                            <p class="what-can-the-platform-do__chose__headline">Загружать данные</p>
+                            <p class="what-can-the-platform-do__chose__description">с подключенных устройств, ваших<br class="br_lg"> файлов, доступных массивов и API </p>
+                          </div>
+                        </div>
+                        <div class="what-can-the-platform-do__chose">
+                          <div class="what-can-the-platform-do__chose__cell"></div>
+                          <div class="what-can-the-platform-do__chose__right">
+                            <p class="what-can-the-platform-do__chose__headline">Обрабатывать наборы данных</p>
+                            <p class="what-can-the-platform-do__chose__description">доступными инструментами, устанавливать<br class="br_lg"> алерты и нормативные пределы</p>
+                          </div>
+                        </div>
+                        <div class="what-can-the-platform-do__chose">
+                          <div class="what-can-the-platform-do__chose__cell"></div>
+                          <div class="what-can-the-platform-do__chose__right">
+                            <p class="what-can-the-platform-do__chose__headline">Формировать отчёты</p>
+                            <p class="what-can-the-platform-do__chose__description">для лиц принимающих решение<br class="br_lg"> и ваших конечных клиентов</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="what-can-the-platform-do__mobile-choses">
+                        <div class="what-can-the-platform-do__mobile-chose what-can-the-platform-do__mobile-chose_active">
+                          <p class="what-can-the-platform-do__mobile-chose__headline">Загружать данные</p>
+                          <p class="what-can-the-platform-do__mobile-chose__description">с подключенных устройств, ваших <br class="br_md">файлов, доступных массивов и API </p>
+                        </div>
+                        <div class="what-can-the-platform-do__mobile-chose">
+                          <p class="what-can-the-platform-do__mobile-chose__headline">Обрабатывать наборы данных</p>
+                          <p class="what-can-the-platform-do__mobile-chose__description">доступными инструментами, устанавливать алерты и нормативные пределы</p>
+                        </div>
+                        <div class="what-can-the-platform-do__mobile-chose">
+                          <p class="what-can-the-platform-do__mobile-chose__headline">Формировать отчёты</p>
+                          <p class="what-can-the-platform-do__mobile-chose__description">для лиц принимающих решение и ваших конечных клиентов</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="what-can-the-platform-do__mobile-chose">
-                      <p class="what-can-the-platform-do__mobile-chose__headline">Формировать отчёты</p>
-                      <p class="what-can-the-platform-do__mobile-chose__description">для лиц принимающих решение и ваших конечных клиентов</p>
+                    <div class="col-lg-6 what-can-the-platform-do__mobile-order-2">
+                      <div class="what-can-the-platform-do__mock">
+                        <div class="what-can-the-platform-do__mock__screen"><img class="what-can-the-platform-do__mock__screen__image what-can-the-platform-do__mock__screen__image_active" src="assets/img/what-can-the-platform-do-1.png"><img class="what-can-the-platform-do__mock__screen__image" src="assets/img/what-can-the-platform-do-1.png"><img class="what-can-the-platform-do__mock__screen__image" src="assets/img/what-can-the-platform-do-1.png"></div><img class="what-can-the-platform-do__mock__mac" src="assets/img/mac.png">
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-6 what-can-the-platform-do__mobile-order-2">
-                  <div class="what-can-the-platform-do__mock">
-                    <div class="what-can-the-platform-do__mock__screen"><img class="what-can-the-platform-do__mock__screen__image what-can-the-platform-do__mock__screen__image_active" src="assets/img/what-can-the-platform-do-1.png"><img class="what-can-the-platform-do__mock__screen__image" src="assets/img/what-can-the-platform-do-1.png"><img class="what-can-the-platform-do__mock__screen__image" src="assets/img/what-can-the-platform-do-1.png"></div><img class="what-can-the-platform-do__mock__mac" src="assets/img/mac.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="questions-and-answers"><svg  class="questions-and-answers__billet questions-and-answers__billet_top questions-and-answers__billet_desktop" preserveAspectRatio="none" viewBox="0 0 1598 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </section>
+              <section class="questions-and-answers"><svg  class="questions-and-answers__billet questions-and-answers__billet_top questions-and-answers__billet_desktop" preserveAspectRatio="none" viewBox="0 0 1598 31" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1597.37 31H0.604492C779.613 -37.0025 1557.17 27.5705 1597.37 31Z" fill="#EFF1FA"/>
 </svg>
 <svg class="questions-and-answers__billet questions-and-answers__billet_top questions-and-answers__billet_tablet" preserveAspectRatio="none" viewBox="0 0 768 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -202,65 +217,106 @@
 <svg class="questions-and-answers__billet questions-and-answers__billet_top questions-and-answers__billet_mobile" preserveAspectRatio="none"  viewBox="0 0 320 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M320 25.6149C320 25.6149 158 -32.0186 0 25.6149V26H320V25.6149Z" fill="#EFF1FA"/>
 </svg>
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <h2 class="questions-and-answers__headline">Вопросы и ответы</h2>
-                  <div class="questions-and-answers__questions">
-                    <div class="questions-and-answers__question questions-and-answers__question_active">
-                      <div class="questions-and-answers__question__top">
-                        <p class="questions-and-answers__question__headline">Что такое Natlogger?</p>
-                        <div class="questions-and-answers__question__open"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 class="questions-and-answers__headline">Вопросы и ответы</h2>
+                      <div class="questions-and-answers__questions">
+                        <div class="questions-and-answers__question questions-and-answers__question_active">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Что такое Natlogger?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">Вы профессиональный консультант или работаете в консалтинговой компании с большим количесвтом клиентов, Вы учёный, преподаватель, датасаинтист, специалист, работающий с большими и сырыми данными, содержащими пробелы, и привыкли иметь дело с API и другими решениями, облегчающими задачи бизнеса, образования и науки </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Для кого предназначен Natlogger?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Нужны ли мне датчики для работы с Natlogger?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Значит ли это, что без сенсорного оборудования Natlogger бесполезен для меня?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">С чего начинается работа на платформе Natlogger? </p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Для чего нужен инструмент «Feedback»?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Почему ваша команда начала разрабатывать платформу Natlogger?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Какова ваша миссия?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Каково ваше видение?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
+                        <div class="questions-and-answers__question">
+                          <div class="questions-and-answers__question__top">
+                            <p class="questions-and-answers__question__headline">Где получить более детальные ответы?</p>
+                            <div class="questions-and-answers__question__open"></div>
+                          </div>
+                          <p class="questions-and-answers__question__answer">answer </p>
+                        </div>
                       </div>
-                      <p class="questions-and-answers__question__answer">Вы профессиональный консультант или работаете в консалтинговой компании с большим количесвтом клиентов, Вы учёный, преподаватель, датасаинтист, специалист, работающий с большими и сырыми данными, содержащими пробелы, и привыкли иметь дело с API и другими решениями, облегчающими задачи бизнеса, образования и науки </p>
-                    </div>
-                    <div class="questions-and-answers__question">
-                      <div class="questions-and-answers__question__top">
-                        <p class="questions-and-answers__question__headline">Значит ли это, что без сенсорного оборудования Natlogger бесполезен для меня?</p>
-                        <div class="questions-and-answers__question__open"></div>
-                      </div>
-                      <p class="questions-and-answers__question__answer">answer </p>
-                    </div>
-                    <div class="questions-and-answers__question">
-                      <div class="questions-and-answers__question__top">
-                        <p class="questions-and-answers__question__headline">Для кого предназначен Natlogger?</p>
-                        <div class="questions-and-answers__question__open"></div>
-                      </div>
-                      <p class="questions-and-answers__question__answer">answer </p>
                     </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
-          </section>
-          <footer class="footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="footer__between">
-                    <div class="footer__half"><img class="footer__logo" src="assets/img/logo-word.svg">
-                      <div class="footer__info">
-                        <p class="footer__copyright">2020 © Natlogger</p><a class="footer__license" href="#">Лицензионное соглашение</a>
-                      </div>
-                    </div>
-                    <div class="footer__half">
-                      <div class="footer__menu"><a class="footer__menu__link footer__menu__link_active" href="#">Главная</a><a class="footer__menu__link" href="#">Цены</a><a class="footer__menu__link" href="#">Блог</a><a class="footer__menu__link" href="#">Контакты</a></div><a class="footer__login" href="#"><img class="footer__login__icon" src="assets/img/login-white.svg">Войти</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </footer>
-          <div class="menu-window">
-            <div class="menu-window__back" onclick="closeWindowMenu()"></div>
-            <div class="menu-window__shell">
-              <button class="menu-window__shell__close" onclick="closeWindowMenu()"><img src="assets/img/close.svg"></button>
-              <div class="menu-window__shell__center"><img class="menu-window__shell__logo" src="assets/img/logo-word.svg">
-                <div class="menu-window__shell__links"><a class="menu-window__shell__links__link menu-window__shell__links__link_active" href="#">Главная</a><a class="menu-window__shell__links__link" href="#">Цены</a><a class="menu-window__shell__links__link" href="#">Блог</a><a class="menu-window__shell__links__link" href="#">Контакты</a></div><a class="menu-window__shell__login" href="#"><img class="menu-window__shell__login__icon" src="assets/img/login.svg">Войти</a>
-              </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer__between">
+          <div class="footer__half"><img class="footer__logo" src="assets/img/logo-word.svg">
+            <div class="footer__info">
+              <p class="footer__copyright">2020 © Natlogger</p><a class="footer__license" href="#">Лицензионное соглашение</a>
             </div>
           </div>
+          <div class="footer__half">
+            <div class="footer__menu"><a class="footer__menu__link footer__menu__link_active" href="#">Главная</a><a class="footer__menu__link" href="#">Цены</a><a class="footer__menu__link" href="#">Блог</a><a class="footer__menu__link" href="#">Контакты</a></div><a class="footer__login" href="#"><img class="footer__login__icon" src="assets/img/login-white.svg"><span class="footer__login__text">Войти</span></a>
+          </div>
         </div>
-    <script src="assets/js/common.js?v-1599223383594"></script>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="assets/js/common.js?v-1599851087414"></script>
   </body>
 </html>

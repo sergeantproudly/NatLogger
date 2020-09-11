@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Natlogger - Prices
+    </title>
+    <meta name="description" content="">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./og.jpg">
+    <meta property="og:title" content=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css?v-1599851087424" rel="stylesheet"><link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="stick">
+      <div class="stick__top">
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header__between">
+          <div class="header__half"><a class="header__logo" href="#"><img class="header__logo__image" src="assets/img/logo.svg"></a>
+            <div class="header__menu"><a class="header__menu__link header__menu__link_active" href="#">Главная</a><a class="header__menu__link" href="#">Цены</a><a class="header__menu__link" href="#">Блог</a><a class="header__menu__link" href="#">Контакты</a></div>
+          </div>
+          <div class="header__half">
+            <div class="header__language-shell">
+              <button class="header__language-close" onclick="closeLanguageDropdown()"></button>
+              <button class="header__language-open" onclick="openLanguageDropdown()"><span class="header__language-open__text">RU</span><img class="header__language-open__icon" src="assets/img/ru.svg"></button>
+              <div class="header__language-shell__dropdown"> <a class="header__language header__language_current" href="./"><img class="header__language__icon" src="assets/img/ru.svg"><span class="header__language__text">Russian</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/en.svg"><span class="header__language__text">English</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/esp.svg"><span class="header__language__text">Español</span></a></div>
+            </div>
+            <button class="header__burger" onclick="openWindowMenu()"><img class="header__burger__image" src="assets/img/burger.svg"></button><a class="header__login" href="#"><img class="header__login__icon" src="assets/img/login.svg">Войти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu-window">
+  <div class="menu-window__back" onclick="closeWindowMenu()"></div>
+  <div class="menu-window__shell">
+    <button class="menu-window__shell__close" onclick="closeWindowMenu()"><img src="assets/img/close.svg"></button>
+    <div class="menu-window__shell__center"><img class="menu-window__shell__logo" src="assets/img/logo-word.svg">
+      <div class="menu-window__shell__links"><a class="menu-window__shell__links__link menu-window__shell__links__link_active" href="#">Главная</a><a class="menu-window__shell__links__link" href="#">Цены</a><a class="menu-window__shell__links__link" href="#">Блог</a><a class="menu-window__shell__links__link" href="#">Контакты</a></div><a class="menu-window__shell__login" href="#"><img class="menu-window__shell__login__icon" src="assets/img/login.svg"><span class="menu-window__shell__login__text">Войти</span></a>
+    </div>
+  </div>
+</div>
+        <section class="pricing-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="pricing-page__mobile-top">
+                  <p class="pricing-page__title">Цены</p>
+                  <p class="pricing-page__description">В таблице Вы можете увидеть возможности, наборы функций и цены платформы для разных типов пользователей</p>
+                  <div class="pricing-page__choose">
+                    <p class="pricing-page__choose__label">Выберите тариф</p>
+                    <select class="pricing-page__choose__select" onchange="turnOnPriceColumn(this.options[this.selectedIndex].value)">
+                      <option value="0">Руководитель</option>
+                      <option value="1">Аналитик</option>
+                      <option value="2">Консультант</option>
+                      <option value="3">Спецпроект</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="pricing-page__middle">
+                  <div class="pricing-page__left">
+                    <div class="pricing-page__left__top-layer">
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__title">Цены</p>
+                        <p class="pricing-page__description">В таблице Вы можете увидеть возможности, наборы функций и цены платформы для разных типов пользователей</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Количество членов команды</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Количествто устройств</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Бесплатный пробный период</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Техническая поддержка</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Кастомизация сервиса с использованием логотипа пользователя</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Постоянные источники данных</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Создание отчетов</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Логирование заходов пользователей</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Ограничение заходов по IP</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Соглашение об уровне обслуживания</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Основные возможности</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Доступ по API</p>
+                      </div>
+                      <div class="pricing-page__left__line">
+                        <p class="pricing-page__left__label">Кому подходит</p>
+                      </div>
+                      <div class="pricing-page__left__line"></div>
+                    </div>
+                  </div>
+                  <div class="pricing-page__right">
+                    <div class="pricing-page__right-shell">
+                      <div class="pricing-page__right-scroll">
+                        <div class="pricing-page__right__column">
+                          <div class="pricing-page__right__line">
+                            <div class="pricing-page__right__head">
+                              <div class="pricing-page__right__head__image-shell"><img class="pricing-page__right__head__image" src="assets/img/direction-1.png"></div>
+                              <p class="pricing-page__right__head__title">РУКОВОДИТЕЛЬ</p>
+                            </div>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Безлимитно</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Только свои устройства</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Только чтение</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Работа с данными, готовыми к оценке на дашбордах, графиках и отчётах.</li>
+                              <li>Наблюдение и принятие решений</li>
+                              <li>Передача наборов данных по ссылке.</li>
+                              <li>Поручения АНАЛИТИКАМ и КОНСУЛЬТАНТАМ</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Лица принимающие решения</li>
+                              <li>Руководители</li>
+                              <li>Менеджеры</li>
+                              <li>Инспекторы</li>
+                              <li>Супервайзеры</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__bottom">
+                            <div class="pricing-page__right__price">$220<span class="pricing-page__right__price__per">/мес</span></div><a class="pricing-page__right__target" href="#">Зарегистрироваться</a>
+                          </div>
+                        </div>
+                        <div class="pricing-page__right__column">
+                          <div class="pricing-page__right__line">
+                            <div class="pricing-page__right__head">
+                              <div class="pricing-page__right__head__image-shell"><img class="pricing-page__right__head__image" src="assets/img/direction-2.png"></div>
+                              <p class="pricing-page__right__head__title">АНАЛИТИК</p>
+                            </div>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value"> До 5</p>
+                            <p class="pricing-page__right__annotation"> Дополнительный пользователь $12</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">До 10</p>
+                            <p class="pricing-page__right__annotation">Дополнительное устройство $12</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value"> 14 дней</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">24/7</p>
+                            <p class="pricing-page__right__annotation">e-mail, Skype</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Только свои устройства</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Работа с данными, готовыми к оценке на дашбордах, графиках и отчётах.</li>
+                              <li>Наблюдение и принятие решений</li>
+                              <li>Передача наборов данных по ссылке.</li>
+                              <li>Поручения АНАЛИТИКАМ и КОНСУЛЬТАНТАМ</li>
+                              <li>Подключение устройств к платформе</li>
+                              <li>Формирование команды АНАЛИТИКОВ и РУКОВОДИТЕЛЕЙ</li>
+                              <li>Загрузка на платформу и обработка собственных наборов данных</li>
+                              <li>Работа с собственными сырыми, чистыми, не имеющими пробелов данными (small data)</li>
+                              <li>Установка собственных предельных параметров</li>
+                              <li>Установка собственных алертов</li>
+                              <li>Подготовка и отправка отчётов </li>
+                              <li>Подготовка данных для РУКОВОДИТЕЛЕЙ.</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Самостоятельные компании, использующие платформу только для своих нужд</li>
+                              <li>Промышленные предприятия малого и среднего бизнеса</li>
+                              <li>Жилищно-коммунальные службы, управляющие компании и товарищества собственников жилья</li>
+                              <li>Архитекторы</li>
+                              <li>Строители</li>
+                              <li>Агрономы</li>
+                              <li>Экологи</li>
+                              <li>Инженеры по технике безопасности, санитарным нормам и охране окружающей среды</li>
+                              <li>Штатные аналитики и статистики </li>
+                              <li>Специалисты по удалённому зондированию и сенсоризации </li>
+                              <li>Профильные оперативные специалисты из отрасли</li>
+                              <li>Предприятия горнодобывающей промышленности</li>
+                              <li>Предприятия дорожного сектора </li>
+                              <li>Школьные кружки по экологии, охране окружающей среды, изменению климата, устойчивому развитию и интернету вещей</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__bottom">
+                            <div class="pricing-page__right__price">$420<span class="pricing-page__right__price__per">/мес</span></div><a class="pricing-page__right__target" href="#">Зарегистрироваться</a>
+                          </div>
+                        </div>
+                        <div class="pricing-page__right__column">
+                          <div class="pricing-page__right__line">
+                            <div class="pricing-page__right__head">
+                              <div class="pricing-page__right__head__image-shell"><img class="pricing-page__right__head__image" src="assets/img/direction-3.png"></div>
+                              <p class="pricing-page__right__head__title">КОНСУЛЬТАНТ</p>
+                            </div>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">До 15</p>
+                            <p class="pricing-page__right__annotation">Дополнительный пользователь $12</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">До 30</p>
+                            <p class="pricing-page__right__annotation">Дополнительное устройство $12</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">14 дней</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">24/7</p>
+                            <p class="pricing-page__right__annotation">E-mail, Skype, WhatsApp, Telegram, TeamViewer</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Устройства ваших конечных клиентов + API</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__disable">Нет</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Работа с данными, готовыми к оценке на дашбордах, графиках и отчётах.</li>
+                              <li>Наблюдение и принятие решений</li>
+                              <li>Передача наборов данных по ссылке.</li>
+                              <li>Поручения АНАЛИТИКАМ и КОНСУЛЬТАНТАМ</li>
+                              <li>Подключение устройств к платформе</li>
+                              <li>Формирование команды АНАЛИТИКОВ и РУКОВОДИТЕЛЕЙ</li>
+                              <li>Загрузка на платформу и обработка собственных наборов данных</li>
+                              <li>Работа с собственными сырыми, чистыми, не имеющими пробелов данными (small data)</li>
+                              <li>Установка собственных предельных параметров</li>
+                              <li>Установка собственных алертов</li>
+                              <li>Подготовка и отправка отчётов </li>
+                              <li>Подготовка данных для РУКОВОДИТЕЛЕЙ.</li>
+                              <li>Кастомизация платформы с использованием вашего логотипа</li>
+                              <li>Получение доступных наборов данных по API</li>
+                              <li>Почти всё, что нужно для ведения бизнеса, исследований или преподавания</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Массивы данных</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Консультанты и компании-консультанты в области экологии, охраны окружающей среды и риск-менеджмента, а также лаборатории, у которых есть собственные конечные клиенты под план РУКОВОДИТЕЛЬ</li>
+                              <li>Компании оказывающие услуги экологической телематики / телематики охраны окружающей среды </li>
+                              <li>Компании специализирующиеся на мониторинге окружающей среды (включая воздух, воду, почву, растительность, климат и погоду среди прочего) по спутниковым снимкам, для уточнения своих данных с использованием сети наземных датчиков</li>
+                              <li>Учёные, преподаватели и учителя, работающие с большим количеством студентов, выполняющих практику/лабораторные работы по плану АНАЛИТИК.</li>
+                              <li>Дата-сайентисты и специалисты, работающие с большими данными.</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__bottom">
+                            <div class="pricing-page__right__price">$840<span class="pricing-page__right__price__per">/мес</span></div><a class="pricing-page__right__target" href="#">Зарегистрироваться</a>
+                          </div>
+                        </div>
+                        <div class="pricing-page__right__column">
+                          <div class="pricing-page__right__line">
+                            <div class="pricing-page__right__head">
+                              <div class="pricing-page__right__head__image-shell"><img class="pricing-page__right__head__image" src="assets/img/direction-4.png"></div>
+                              <p class="pricing-page__right__head__title">СПЕЦПРОЕКТ	</p>
+                            </div>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Безлимитно</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Безлимитно</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Инвидуально</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Персональная 24/7</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Индивидуально + API + ИИ</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Есть</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <p class="pricing-page__right__value">Инвидуально</p>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Интеграция с CRM</li>
+                              <li>Наборы данных, разделенные по: стране, текущим, прогнозным, историческим, историческим прогнозным</li>
+                              <li>Спутниковые изображения</li>
+                              <li>Карты</li>
+                              <li>Модели</li>
+                              <li>ИИ</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__line">
+                            <ul class="pricing-page__right__list">
+                              <li>Пользователи с особыми требованиями</li>
+                              <li>Организации и учреждения, которым необходимы локальные или закрытые системы и оперирование в крупных диспетчерских центрах</li>
+                              <li>Государственные структуры</li>
+                              <li>Крупные промышленные предприятия</li>
+                              <li>Консалтинговые корпорации</li>
+                            </ul>
+                          </div>
+                          <div class="pricing-page__right__bottom">
+                            <div class="pricing-page__right__price">Инвидуально</div><a class="pricing-page__right__target" href="#">Связаться</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pricing-page__mobile-bottom">
+                  <div class="pricing-page__target">
+                    <div class="pricing-page__target__price">$220<span class="pricing-page__target__price__per">/мес</span></div><a class="pricing-page__target__target" href="#">Зарегистрироваться</a>
+                  </div>
+                  <div class="pricing-page__target">
+                    <div class="pricing-page__target__price">$420<span class="pricing-page__target__price__per">/мес</span></div><a class="pricing-page__target__target" href="#">Зарегистрироваться</a>
+                  </div>
+                  <div class="pricing-page__target">
+                    <div class="pricing-page__target__price">$840<span class="pricing-page__target__price__per">/мес</span></div><a class="pricing-page__target__target" href="#">Зарегистрироваться</a>
+                  </div>
+                  <div class="pricing-page__target">
+                    <div class="pricing-page__target__price">Инвидуально</div><a class="pricing-page__target__target" href="#">Связаться</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer__between">
+          <div class="footer__half"><img class="footer__logo" src="assets/img/logo-word.svg">
+            <div class="footer__info">
+              <p class="footer__copyright">2020 © Natlogger</p><a class="footer__license" href="#">Лицензионное соглашение</a>
+            </div>
+          </div>
+          <div class="footer__half">
+            <div class="footer__menu"><a class="footer__menu__link footer__menu__link_active" href="#">Главная</a><a class="footer__menu__link" href="#">Цены</a><a class="footer__menu__link" href="#">Блог</a><a class="footer__menu__link" href="#">Контакты</a></div><a class="footer__login" href="#"><img class="footer__login__icon" src="assets/img/login-white.svg"><span class="footer__login__text">Войти</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="assets/js/common.js?v-1599851087424"></script>
+  </body>
+</html>

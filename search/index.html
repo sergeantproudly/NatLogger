@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Natlogger - Search
+    </title>
+    <meta name="description" content="">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="./og.jpg">
+    <meta property="og:title" content=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css?v-1599851087424" rel="stylesheet"><link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div class="stick">
+      <div class="stick__top">
+<header class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="header__between">
+          <div class="header__half"><a class="header__logo" href="#"><img class="header__logo__image" src="assets/img/logo.svg"></a>
+            <div class="header__menu"><a class="header__menu__link header__menu__link_active" href="#">Главная</a><a class="header__menu__link" href="#">Цены</a><a class="header__menu__link" href="#">Блог</a><a class="header__menu__link" href="#">Контакты</a></div>
+          </div>
+          <div class="header__half">
+            <div class="header__language-shell">
+              <button class="header__language-close" onclick="closeLanguageDropdown()"></button>
+              <button class="header__language-open" onclick="openLanguageDropdown()"><span class="header__language-open__text">RU</span><img class="header__language-open__icon" src="assets/img/ru.svg"></button>
+              <div class="header__language-shell__dropdown"> <a class="header__language header__language_current" href="./"><img class="header__language__icon" src="assets/img/ru.svg"><span class="header__language__text">Russian</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/en.svg"><span class="header__language__text">English</span></a><a class="header__language" href="./"><img class="header__language__icon" src="assets/img/esp.svg"><span class="header__language__text">Español</span></a></div>
+            </div>
+            <button class="header__burger" onclick="openWindowMenu()"><img class="header__burger__image" src="assets/img/burger.svg"></button><a class="header__login" href="#"><img class="header__login__icon" src="assets/img/login.svg">Войти</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="menu-window">
+  <div class="menu-window__back" onclick="closeWindowMenu()"></div>
+  <div class="menu-window__shell">
+    <button class="menu-window__shell__close" onclick="closeWindowMenu()"><img src="assets/img/close.svg"></button>
+    <div class="menu-window__shell__center"><img class="menu-window__shell__logo" src="assets/img/logo-word.svg">
+      <div class="menu-window__shell__links"><a class="menu-window__shell__links__link menu-window__shell__links__link_active" href="#">Главная</a><a class="menu-window__shell__links__link" href="#">Цены</a><a class="menu-window__shell__links__link" href="#">Блог</a><a class="menu-window__shell__links__link" href="#">Контакты</a></div><a class="menu-window__shell__login" href="#"><img class="menu-window__shell__login__icon" src="assets/img/login.svg"><span class="menu-window__shell__login__text">Войти</span></a>
+    </div>
+  </div>
+</div>
+        <section class="search-page">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <input class="search-page__search" type="text" placeholder="Поиск">
+              </div>
+              <div class="col-lg-6 col-md-6"><a class="search-page__article" href="#"> <img class="search-page__article__image" src="assets/img/image-article-preview-0.jpg"><span class="search-page__article__title"> <span>Интегр</span>аторы услуг экологической телематики. До и после.</span><span class="search-page__article__date"><img class="search-page__article__date__image" src="assets/img/date-grey.svg"><span class="search-page__article__date__text">29 августа</span></span><span class="search-page__article__time"><img class="search-page__article__time__image" src="assets/img/time-grey.svg"><span class="search-page__article__time__text">4 мин</span></span></a></div>
+              <div class="col-lg-6 col-md-6"><a class="search-page__article" href="#"> <img class="search-page__article__image" src="assets/img/image-article-preview-0.jpg"><span class="search-page__article__title"> <span>Интегр</span>аторы услуг экологической телематики. До и после.</span><span class="search-page__article__date"><img class="search-page__article__date__image" src="assets/img/date-grey.svg"><span class="search-page__article__date__text">29 августа</span></span><span class="search-page__article__time"><img class="search-page__article__time__image" src="assets/img/time-grey.svg"><span class="search-page__article__time__text">4 мин</span></span></a></div>
+              <div class="col-lg-6 col-md-6"><a class="search-page__article" href="#"> <img class="search-page__article__image" src="assets/img/image-article-preview-0.jpg"><span class="search-page__article__title"> <span>Интегр</span>аторы услуг экологической телематики. До и после.</span><span class="search-page__article__date"><img class="search-page__article__date__image" src="assets/img/date-grey.svg"><span class="search-page__article__date__text">29 августа</span></span><span class="search-page__article__time"><img class="search-page__article__time__image" src="assets/img/time-grey.svg"><span class="search-page__article__time__text">4 мин</span></span></a></div>
+            </div>
+          </div>
+        </section>
+      </div>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="footer__between">
+          <div class="footer__half"><img class="footer__logo" src="assets/img/logo-word.svg">
+            <div class="footer__info">
+              <p class="footer__copyright">2020 © Natlogger</p><a class="footer__license" href="#">Лицензионное соглашение</a>
+            </div>
+          </div>
+          <div class="footer__half">
+            <div class="footer__menu"><a class="footer__menu__link footer__menu__link_active" href="#">Главная</a><a class="footer__menu__link" href="#">Цены</a><a class="footer__menu__link" href="#">Блог</a><a class="footer__menu__link" href="#">Контакты</a></div><a class="footer__login" href="#"><img class="footer__login__icon" src="assets/img/login-white.svg"><span class="footer__login__text">Войти</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script src="assets/js/common.js?v-1599851087424"></script>
+  </body>
+</html>
